@@ -1,0 +1,9 @@
+{
+	"coc.preferences.formatOnSaveFiletypes": ["*"],
+
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+	"prettier.semi": false,
+
+	"diagnostic.checkCurrentLine": true
+}
