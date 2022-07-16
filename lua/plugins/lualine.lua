@@ -14,29 +14,12 @@ local colors = {
   lightgrey = '#D3D3D3',
 }
 
-local bubbles_theme = {
-  normal = {
-    a = { fg = colors.black, bg = colors.blue},
-    b = { fg = colors.white, bg = colors.grey },
-    c = { fg = colors.white, bg = colors.grey },
-  },
-
-  insert = { a = { fg = colors.black, bg = colors.blue } },
-  visual = { a = { fg = colors.black, bg = colors.cyan } },
-  replace = { a = { fg = colors.black, bg = colors.red } },
-
-  inactive = {
-    a = { fg = colors.white, bg = colors.grey },
-    b = { fg = colors.lightgrey, bg = colors.grey },
-    c = { fg = colors.lightgrey, bg = colors.grey },
-  },
-}
-
 require('lualine').setup {
   options = {
-    theme = bubbles_theme,
+    theme = 'iceberg_dark',
     component_separators = '|',
-    section_separators = { left = '', right = '' },
+    section_separators = { left = ' ', right = ' ' },
+    -- section_separators = { left = '', right = '' },
   },
   sections = {
     lualine_a = {
@@ -58,13 +41,13 @@ require('lualine').setup {
     lualine_y = {},
     lualine_z = { 'location' },
   },
-    tabline = { 
-        lualine_a = {'buffers'},
-        lualine_b = {'branch'},
+    tabline = {
+        lualine_a = {'filename'},
+        lualine_b = {'tabs'},
         lualine_c = {},
         lualine_x = {},
         lualine_y = {},
-        lualine_z = {'tabs'}
+        lualine_z = {}
     },
   extensions = {},
 }

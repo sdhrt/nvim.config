@@ -10,6 +10,7 @@ set.expandtab = true
 set.smarttab = true
 set.shiftwidth = 4
 set.tabstop=4
+set.guifont="MelsoLGS NF"
 
 set.incsearch = true
 set.ignorecase = true
@@ -25,3 +26,4 @@ set.termguicolors = true
 set.hidden = true
 
 set.signcolumn = 'number'
+

@@ -4,6 +4,7 @@
 	"prettier.useTabs": true,
 	"prettier.tabWidth": 4,
 	"prettier.semi": false,
+	"Lua.diagnostics.globals": ["vim", "use"],
 
 	"diagnostic.checkCurrentLine": true
 }
